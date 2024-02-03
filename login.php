@@ -7,37 +7,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 <body>
+    
+
+
+
+   
+      <?php
+          include('include/nav.php');
+      ?>
+  
+      
     <div class="p-10">
-        <h1 class="mb-8 font-extrabold text-4xl">Register</h1>
+        <h1 class="mb-8  text-4xl">Login</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
     
             <form>
-                <div>
-                    <label class="block font-semibold" for="name">Name</label>
-                    <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full" id="name" type="text" name="name" required="required" autofocus="autofocus">
+                
+              
+                <div class="mt-4">
+                    <label for="email">Email</label>
+                    <input class="w-full  bg-gray-100 rounded-lg placeholder-gray text-xl p-4 border-none block mt-1" placeholder="Email" id="email" type="email" name="email" required="required">
                 </div>
     
                 <div class="mt-4">
-                    <label class="block font-semibold" for="email">Email</label>
-                    <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full" id="email" type="email" name="email" required="required">
+                    <label for="password">Password</label>
+                    <input class="w-full  bg-gray-100 rounded-lg placeholder-gray  text-xl p-4 border-none block mt-1" placeholder="password" id="password" type="password" name="password" required="required" autocomplete="new-password">
                 </div>
-    
-                <div class="mt-4">
-                    <label class="block font-semibold" for="password">Password</label>
-                    <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full" id="password" type="password" name="password" required="required" autocomplete="new-password">
-                </div>
-                <div class="mt-4 w-1/2">
+                <div class="mt-4 w-full md:w-1/2">
                     <a href="loginviagoogle.html" class="px-4 py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
                         <img class="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo">
-                        <span>Login with Google</span>
+                        <span >Login with Google</span>
                     </a>
                 </div>
                 <div class="flex items-center justify-between mt-8">
-                    <button type="submit" class="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">Register</button>
-                    <a href="login.html" class="font-semibold">
-                        Already registered?
+                    <button type="submit" class="flex items-center justify-center px-8 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">Log in</button>
+                    <a href="index.php"  class=" text-sm md:text-l ">
+                        dont have account?
                     </a>
                 </div>
+                
             </form>
     
             <aside class="">

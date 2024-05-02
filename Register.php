@@ -16,7 +16,7 @@
         <h1 class="mb-8 font-extrabold text-4xl">Register</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
     
-            <form>
+            <form action="include/register.inc.php" method="POST">
                 <div>
                     <label class="block font-semibold" for="name">Name</label>
                     <input class="w-full shadow-inner bg-gray-100 rounded-lg placeholder-black text-2xl p-4 border-none block mt-1 w-full" id="name" type="text" name="name" required="required" autofocus="autofocus">
